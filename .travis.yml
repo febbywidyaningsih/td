@@ -40,7 +40,6 @@ script:
   - mkdir build
   - cd build
   - cmake .. && make -j${JOBS} VERBOSE=1
-  - ./test/run_all_tests --filter -client
   
 deploy:
   provider: releases
